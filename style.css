@@ -1,3 +1,80 @@
-/*
-  CSS File
-*/
+header{
+display: inline-block;
+}
+
+#logo{
+padding: 5px;
+  width: 11%;
+  float: left;
+}
+
+nav{
+    text-align: center
+}
+
+.search, .contact{
+    float: right;
+}
+
+.search{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.search-icon{
+    width: 80%;
+}
+
+.contact{
+    padding: 0px;
+}
+
+ul{
+    padding: none;
+    margin: 15px;
+}
+
+li{
+    display:inline-block;
+}
+
+.home, .patients, .professionals{
+    text-align: center;
+}
+
+.home-link, .patients-link, .professionals-link{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.home-link:hover, .home-link:active{
+    border-bottom: 1px solid black ;
+}
+
+.patients:hover{
+    border-bottom: 1px solid black ;
+}
+
+.professionals:hover{
+    border-bottom: 1px solid black ;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:link{
+    color: grey;
+}
+
+a:hover{
+    color: black;
+}
+
+a:active{
+    color: black;
+}
+
+a:visited{
+    color: inherit;
+}
