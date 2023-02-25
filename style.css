@@ -1,90 +1,136 @@
-header{
-display: inline-block;
+html{
+  font-family: "Noto Sans", sans-serif;
 }
 
+/* Header Styles */
+header{
+  display: inline-block;
+  padding: 10px;
+}
+
+/* Main brand logo styles */
 #logo{
-padding: 5px;
-  width: 11%;
+  padding: 5px;
+  width: 10%;
   float: left;
 }
 
+/* Nav bar styles */
 nav{
-    text-align: center
+  text-align: center
 }
 
+/* Search & Contact button position */
 .search, .contact{
-    float: right;
+  float: right;
 }
 
+/* Search button list item styles */
 .search{
-    padding-left: 5px;
-    padding-right: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
+/* Search button styles */
 .search-icon{
-    width: 80%;
+  width: 80%;
 }
 
+/* Contact button list item styles */
 .contact{
-    padding: 0px;
+  padding: 0px;
 }
 
+/* Unordered list styles */
 ul{
-    padding: none;
-    margin: 15px;
+  padding-left: 0px;
+  padding-top: 10px;
+  margin: 10px;
 }
 
+/* List items display order */
 li{
-    display:inline-block;
+  display:inline-block;
 }
 
+/* Contact & Book button styles */
+.contact-button, .book-button{
+  position: relative;
+  border: none;
+  background-color: #1780CA;
+  border-radius: 10px;
+  padding: 5px 30px 5px 30px;
+  font-size: 14px;
+  top:-3px;
+}
+
+/* Nav bar items styles */
 .home, .patients, .professionals{
-    text-align: center;
+  text-align: center;
 }
 
+/* Nav bar links styles */
 .home-link, .patients-link, .professionals-link{
-    padding-right: 5px;
-    padding-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
+/* Nav bar links behaviour */
 .home-link:hover, .home-link:active{
-    border-bottom: 1px solid black ;
+  border-bottom: 1px solid black ;
 }
 
 .patients:hover{
-    border-bottom: 1px solid black ;
+  border-bottom: 1px solid black ;
 }
 
 .professionals:hover{
-    border-bottom: 1px solid black ;
+  border-bottom: 1px solid black ;
 }
 
+/* Global links styles */
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
+/* Global links behaviours */
 a:link{
-    color: grey;
+  color: grey;
 }
 
 a:hover{
-    color: black;
+  color: black;
 }
 
 a:active{
-    color: black;
+  color: black;
 }
 
 a:visited{
-    color: inherit;
+  color: inherit;
 }
 
-.parent{
+/* Main div styles */
+main{
   position: relative;
-  top: 0;
-  left: 0;
 }
 
-.image1{
-  
+/* Landing div style */
+.landing, .images, .about-us, .about-mri{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
+
+.landing-right{  
+  float: right;
+  width: 50%;
+  padding: 10px;
+}
+
+.landing-left{
+  float: left;
+  width: 50%;
+  padding: 10px;
+} 
