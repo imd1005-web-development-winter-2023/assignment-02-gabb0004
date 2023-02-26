@@ -1,3 +1,4 @@
+/* Setting font for whole site */
 html{
   font-family: "Noto Sans", sans-serif;
 }
@@ -41,23 +42,24 @@ nav{
   padding: 0px;
 }
 
-/* Unordered list styles */
-ul{
+/* Navbar unordered list styles */
+.navbar{
   padding-left: 0px;
   padding-top: 10px;
   margin: 10px;
 }
 
-/* List items display order */
-li{
+/* Navbar list items display order */
+.navbar li{
   display:inline-block;
 }
 
 /* Contact & Book button styles */
-.contact-button, .book-button{
+.contact-button, .book-button, .sub-button, .contact-form input[type=submit]{
   position: relative;
   border: none;
   background-color: #1780CA;
+  color: white;
   border-radius: 10px;
   padding: 5px 30px 5px 30px;
   font-size: 14px;
@@ -116,21 +118,240 @@ main{
 }
 
 /* Landing div style */
-.landing, .images, .about-us, .about-mri{
-  width: 90%;
+.landing, .images, .about-us, .about-mri, .services, .beliefs, .subscribe, .socials, .form, footer{
+  width: 100%;
   margin: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.images-inner, .about-us-inner, .about-mri-inner, .services-inner, .beliefs-inner{
+  width: 80%;
+}
+
+.landing{
+  height: 600px;
 }
 
 .landing-right{  
   float: right;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 }
 
 .landing-left{
   float: left;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 } 
+
+.landing-left h1, h3, .book{
+  padding: 5px;
+}
+
+.book{
+  padding-top: 10px;
+}
+
+.scroll{
+  display: flex;
+  margin: auto;
+  padding:10px;
+  justify-content: center;
+}
+
+.scroll img{
+  width: auto;
+  height: auto;
+  padding-right:5px;
+}
+
+.images-inner{
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.images-inner h1, .images-inner p{
+  padding: 10px;
+}
+
+.about-us-inner, .about-mri-inner, .services-inner{
+  display: inline-flex;
+  padding: 20px;
+}
+
+.about-us-inner-right, .about-us-inner-left, .about-mri-inner-right, .about-mri-inner-left{
+  width: 50%;
+}
+
+.about-us-inner-left img{
+  padding-left: 50px;
+}
+
+.about-mri-inner-right img{
+  padding-left: 200px;
+}
+
+.services{
+  background-color: #EBEBEB;
+  height: 400px;
+}
+
+.services-inner{
+  flex-direction: column;
+}
+
+.services-inner-top{
+  flex-direction: column;
+  text-align: center;
+}
+
+.services-inner-bottom, .services-inner-bottom-right, .services-inner-bottom-left{
+  display: inline-flex;
+  padding: 20px 10px 10px 10px;
+}
+
+.services-inner-bottom-left-icon, .services-inner-bottom-right-icon{
+  display: flex;
+  padding: 10px;
+  width: 50%;
+  justify-content: center;
+}
+
+.services-inner-bottom-left-icon img{
+  width: auto;
+}
+
+.services-inner-bottom-left-content p, .services-inner-bottom-right-content p, .services-button{
+  padding: 5px;
+}
+
+.beliefs-title{
+  width: 80%;
+}
+
+.beliefs-sections{
+  display:inline-flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 10px;
+  margin: auto;
+}
+
+.vision, .mission, .values{
+  padding: 10px;
+  width: 100%;
+}
+
+.mission ul, .values ul{
+  list-style-type: none;
+  padding: 5px;
+}
+
+.mission ul>li, .values ul>li{
+  text-indent: -5px;
+}
+
+.mission ul > li:before, .values ul > li:before{
+  content: "-";
+  text-indent: -5px;
+}
+
+.subscribe{
+  background-color: #EBEBEB;
+  height: 200px;
+}
+
+.subscribe-title, .subscribe-button{
+  width: 40%;
+  padding: 0px 10px 0px 10px;
+}
+
+.subscribe-button{
+  display: flex;
+  justify-content: right;
+}
+
+.form{
+  display: flex;
+  width: 80%;
+}
+
+.contact-form{
+  padding: 10px;
+}
+
+.contact-form input{
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid grey 1px;
+}
+
+.contact-form textarea{
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 10px;
+  border: solid grey 1px;
+  resize: none;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.socials{
+  background-color: #D0D0D0;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.socials-left, .socials-right-content{
+  display: inline-flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.socials-left h2{
+  padding-bottom: 85px;
+}
+
+.social-links{
+  padding-top: 85px;
+}
+
+.socials-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.socials-right-content h3, .socials-right-content p, .socials-right-content a{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer{
+  display: flex;
+  background-color: #EBEBEB;
+}
+
+.footer-left, .footer-right{
+  width: 40%;
+}
+
+.footer-right{
+  display: flex;
+  justify-content: right;
+}
+
+.footer-right a{
+  padding-left: 50px ;
+}
